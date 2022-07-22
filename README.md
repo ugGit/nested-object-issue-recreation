@@ -76,10 +76,10 @@ Anyway, the following list resumes the changes made that allow a successful comp
   };
   ```
 
-* adding another attribute to `transformation_faker` holding a value like an:
+* adding another attribute to `transformation_faker`:
   ```cpp
   struct transformation_faker{
-    int something = 0;
+    int something = 0; // can also be after the point_to_global function
     int point_to_global(int local){
       return local;
     }
